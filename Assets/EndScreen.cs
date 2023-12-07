@@ -12,8 +12,9 @@ public class WinScreen : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag(targetTag)) {
             GameOver.SetActive(true);
+            Debug.Log("collided");
         }
 
-        Debug.Log("collided");
+        
     }   
 }
